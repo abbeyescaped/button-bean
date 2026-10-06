@@ -1,0 +1,122 @@
+:root {
+-neutral-100: #F8F6F2;
+-green-100: #f0f0f0;
+-green-600: #f0f0f0;
+-blue-100: #f0f0f0;
+-blue-600: #f0f0f0;
+-secondary-blue-200: #f0f0f0;
+-text-primary: #f0f0f0;
+-text-secondary: #f0f0f0;
+-text-tertiary: #f0f0f0;
+}
+
+* {
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F6F2;
+}
+
+h1 {
+    font-family: "Lazydog", cursive;
+    line-height: 120%;
+    font-size: 68px;
+}
+
+h2 {
+    font-family: "Lazydog", cursive;
+    line-height: 120%;
+    font-size: 44px;
+}
+
+h3 {
+    font-family: "Lazydog", cursive;
+    line-height: 120%;
+    font-size: 32px;
+}
+
+h4 {
+    font-family: "Lazydog", cursive;
+    line-height: 120%;
+    font-size: 24px;
+}
+
+p {
+    font-family:"League Spartan", serif;
+    line-height: 140%;
+    font-size: 18px;
+}
+
+.text-content {
+   max-width: 750px; 
+}
+
+
+.hero-content {
+
+}
+
+.button-set {
+    display: flex;
+}
+
+.button-green {
+    
+}
+
+.button-blue {
+    
+}
+
+.text-ticker {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-ticker-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.major-sections-content-container {
+    padding: 80px 0px;
+    display: flex;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.content-card {
+
+}
+
+.events-container {
+    background-color: white;
+    padding: 80,0;
+} 
+
+.event-card {
+
+}
+
+.footer {
+    
+}
+
+.instagram-carasoul {
+    display: flex;
+}
+
+.footer-content {
+    
+}
