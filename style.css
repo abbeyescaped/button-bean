@@ -1,49 +1,89 @@
+/*hi i am abbey i love my boyfriend !!!!!!!!!!!!*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F8F6F2;
+}
+
 h1 {
     font-family: "Lazydog", cursive;
     line-height: 120%;
     font-size: 68px;
+    color: #361B08;
 }
 
 h2 {
     font-family: "Lazydog", cursive;
     line-height: 120%;
     font-size: 44px;
+    color: #361B08;
 }
 
 h3 {
     font-family: "Lazydog", cursive;
     line-height: 120%;
     font-size: 32px;
+    color: #361B08;
 }
 
 h4 {
     font-family: "Lazydog", cursive;
     line-height: 120%;
     font-size: 24px;
+    color: #361B08;
 }
 
 p {
-    font-family:"League Spartan", serif;
+    font-family:"LeagueSpartan", sans-serif;
     line-height: 140%;
     font-size: 18px;
+    color: #553C2C;
+    @media screen {
+        
+    }
+}
+
+.chip {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+    p{
+        color: #928A42;
+        font-size: 14px;
+    }
+}
+
+.chip-reverse {
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+    p{
+        color: white;
+        font-size: 14px;
+    }
 }
 
 .hero-content {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
+    position: relative;
     width: 100%;
-    height: 1000px;
-    z-index: 0;
+    height: 80vh;
+    z-index: 1;
     overflow: hidden;
 
+    .text-content {
+        margin: 16px 0px;
+    }
+    
     video {
         position: absolute;
         top: 0;
@@ -51,24 +91,88 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        z-index: -1;
+        z-index: -2;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 4px;
+    }
+
+    p{
+        color: white;
     }
 }
 
+.hero-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #477A72, #928A42);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.hero-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
+}
+
 .text-content {
-   max-width: 750px; 
+   max-width: 750px;
 }
 
 .button-set {
     display: flex;
+    margin-top: 8px;
 }
 
 .button-green {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 16px 10px 20px;
+    border: 1.5px solid #928A42;
+    border-radius: 16px;
+    background-color: white;
+    gap: 4px;
 
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        color: #928A42;
+    }
 }
 
 .button-blue {
-    
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 16px 10px 20px;
+    border: 1.5px solid #3D5E5E;
+    border-radius: 16px;
+    background-color: white;
+    gap: 4px;
+
+    img {
+        width: 20px;
+        height: 20px; 
+    }
+
+    p{
+        color: #3D5E5E;
+    }
 }
 
 .text-ticker {
@@ -78,7 +182,6 @@ p {
     display: flex;
     justify-content: space-between;
     z-index: 0;
-    color:#928A42;
 
     img {
         position: absolute;
@@ -88,6 +191,10 @@ p {
         height: 100%;
         object-fit: cover;
         z-index: -1;
+    }
+
+    h3 {
+        color: #928A42;
     }
 }
 
@@ -112,8 +219,30 @@ p {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1;
+            z-index: -2;
     }
+}
+
+.coffee-image-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D250A;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.coffee-image-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .content-card {
@@ -123,22 +252,39 @@ p {
     flex-direction: column;
     width: 100%;
     border-radius: 16px;
+    gap: 16px;
 
     img {        
         width: 100%;
-        height: 640px;
+        height: 540px;
         object-fit: cover;
         border-radius: 16px;
     }
+
+    .button-blue {
+        margin-top: auto;
+    }
+}
+
+.content-card-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    gap: 8px;
 }
 
 .events-container {
-    padding: 80px 0px;
+    padding: 80px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
 
     .text-content {
-    
+        text-align: center;
+
         h2 {
-            font-family:"League Spartan", serif;
+            font-family:"LeagueSpartan", serif;
         }
     }
 }
@@ -148,18 +294,74 @@ p {
     color: #928A42;
 }
 
-.event-card {
+.events-carasoul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px;
+}
 
+.event-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+
+    img {
+        /* width: ; */
+        height: 380px;
+        /* max-width: ; */
+        object-fit: cover;
+    }
+
+    h3 {
+        padding: 24px 16px;
+    }
+}
+
+.green-event-card {
+    background-color: #EDEDD7;
+}
+
+.blue-event-card {
+    background-color: #E1EAE8;
+}
+
+.green-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #928A42;
+    z-index: 1;
 }
 
 .footer {
-    
+    padding: 16px;
 }
 
 .instagram-carasoul {
-    display: flex;
+    padding: 80px 0px 16px 0px;
 }
 
-.footer-content {
-    
+.instagram-carasoul-container {
+    display: flex;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.instagram-carasoul-leftcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-content {
+    display: flex;
+
+    img {
+        width: 113px;
+        height: 103px;
+    }
 }
