@@ -3,3 +3,8 @@
     font-family: "LeagueSpartan";
     src: url("assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
 }
+
+@font-face {
+    font-family: "PlaypenSans";
+    src: url("assets/fonts/Playpen_Sans/PlaypenSans-VariableFont_wght.ttf");
+}

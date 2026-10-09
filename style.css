@@ -49,22 +49,30 @@ p {
 }
 
 .chip {
+    display: flex;
     text-transform: uppercase;
     margin-bottom: 4px;
 
     p{
         color: #928A42;
         font-size: 14px;
+        font-family: "PlaypenSans", serif;
+        font-weight: 600;
+        margin-left: 4px;
     }
 }
 
 .chip-reverse {
+    display: flex;
     text-transform: uppercase;
     margin-bottom: 4px;
 
     p{
         color: white;
         font-size: 14px;
+        font-family: "PlaypenSans", serif;
+        font-weight: 600;
+        margin-left: 4px;
     }
 }
 
@@ -73,7 +81,6 @@ p {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     position: relative;
     width: 100%;
     height: 80vh;
@@ -96,7 +103,6 @@ p {
 
     h1 {
         color: white;
-        margin-bottom: 4px;
     }
 
     p{
@@ -128,18 +134,26 @@ p {
 
 .text-content {
    max-width: 750px;
+   text-align: center;
+
+   p {
+    margin-top: 4px;
+   }
 }
 
 .button-set {
     display: flex;
     margin-top: 8px;
+    gap: 8px;
 }
 
 .button-green {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: fit-content;
-    padding: 10px 16px 10px 20px;
+    min-width: 140px;
+    padding: 10px 20px;
     border: 1.5px solid #928A42;
     border-radius: 16px;
     background-color: white;
@@ -157,9 +171,11 @@ p {
 
 .button-blue {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: fit-content;
-    padding: 10px 16px 10px 20px;
+    min-width: 140px;
+    padding: 10px 20px;
     border: 1.5px solid #3D5E5E;
     border-radius: 16px;
     background-color: white;
@@ -170,8 +186,24 @@ p {
         height: 20px; 
     }
 
-    p{
+    p {
         color: #3D5E5E;
+    }
+}
+
+.radial-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-width: 140px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    background-image: radial-gradient(circle, #DDDBB2, #BED1CE);
+
+    p {
+        color: #361B08;
+        font-weight: 600;
     }
 }
 
@@ -199,7 +231,7 @@ p {
 }
 
 .major-sections-content-container {
-    padding: 80px 16px;
+    margin: 80px 16px 40px 16px;
 }
 
 .cards-container {
@@ -274,15 +306,13 @@ p {
 }
 
 .events-container {
-    padding: 80px 16px;
+    margin: 80px 16px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 24px;
 
     .text-content {
-        text-align: center;
-
         h2 {
             font-family:"LeagueSpartan", serif;
         }
@@ -337,19 +367,60 @@ p {
     z-index: 1;
 }
 
+.large-cta {
+    display: flex;
+    position: relative;
+    padding: 40px 16px;
+    overflow: hidden;
+    gap: 16px;
+    width: 100%;
+    z-index: 0;
+
+    .large-cta-image-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+.cta-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    background-color: #F8F6F2;
+    border-radius: 16px;
+
+    .text-content {
+        margin-top: 24px;
+        margin-bottom: 16px;
+
+       p {
+            color: #745F50;
+        }
+    }
+}
+
+.cta-icon-image {
+    padding: 12px;
+    background-color: #EDEDD7;
+    border-radius: 16px;;
+}
+
 .footer {
-    padding: 16px;
+    margin: 80px 16px 0px 16px;
 }
 
 .instagram-carasoul {
-    padding: 80px 0px 16px 0px;
-}
-
-.instagram-carasoul-container {
     display: flex;
+    background-color: white;
     padding: 16px;
     border-radius: 16px;
-    background-color: white;
 }
 
 .instagram-carasoul-leftcontent {
@@ -357,11 +428,54 @@ p {
     flex-direction: column;
 }
 
+.primary-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 16px;
+    padding: 40px 16px;
+    border-radius: 16px;
+}
+
 .footer-top-content {
     display: flex;
+    justify-content: space-between;
 
     img {
+        object-fit: cover;
         width: 113px;
         height: 103px;
+        margin-right: 118px;
     }
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-top-left-content {
+    display: flex;
+}
+
+.footer-top-right-content {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        margin-top: auto;
+        height: 32px;
+        width: 32px;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.content-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 12px;
 }
