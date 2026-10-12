@@ -158,7 +158,8 @@ p {
 .primary-navigation {
     display: flex;
     justify-content: space-between;
-    margin: 12px 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #D4CEB9;
 
     img {
         width: 41px;
@@ -173,6 +174,13 @@ p {
 
 .nav-bar {
     display: flex;
+    font-family: "LeagueSpartan", serif;
+    color: #553C2C;
+    font-weight: 18px;
+    
+    li {
+        margin-right: 12px;
+    }
 }
 
 .hero-content {
@@ -323,7 +331,6 @@ p {
     flex-direction: column;
     width: 100%;
     border-radius: 16px;
-    gap: 16px;
 
     .button-blue {
         margin-top: auto;
@@ -340,7 +347,8 @@ p {
 .content-card-text {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
+    margin-top: 16px;
+    margin-bottom: 20px;
     gap: 8px;
 }
 
@@ -349,12 +357,18 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 24px;
 
     .text-content {
+        margin: 12px 0px;
+
         h2 {
             font-family:"LeagueSpartan", serif;
         }
+    }
+
+    .button-green {
+        margin-top: 4px;
+        margin-bottom: 24px
     }
 }
 
@@ -484,6 +498,7 @@ p {
     img {
         width: 100%;
         aspect-ratio: 1;
+        object-fit: cover;
         border-radius: 16px;
     }
 }
@@ -578,6 +593,7 @@ nav {
     padding: 12px 0px;
 
     img {
+
         width: 16px;
         height: 16px;
         margin-right: 4px;
@@ -599,9 +615,91 @@ nav {
 
 .image-text-header {
     display: flex;
+    width: 100%;
+    height: 80vh;
     margin: 16px;
+    gap: 16px;
     
-    img {
-        width: 50%;
+}
+
+.image-header-half {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.text-header-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .hero-text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 12px;
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            margin-top: 8px;
+        }
     }
+}
+
+.values-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    padding: 80px 16px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+
+    }
+}
+
+.values-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    grid-gap: 16px;
+    margin-top: 24px;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    background-color: white;
+    border-radius: 16px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        background-color: #E1EAE8;
+    }
+}
+
+.value-card-text {
+
 }
