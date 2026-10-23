@@ -53,10 +53,6 @@ p {
     }
 }
 
-.w-full {
-    width: 100%;
-}
-
 /*control styles ie. buttons, chips*/
 
 .button-green {
@@ -202,6 +198,7 @@ p {
 
     .text-content {
         margin: 16px 0px;
+        max-width: 750px;
 
         p {
             color: white;
@@ -230,7 +227,7 @@ p {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right, #477A72, #928A42);
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -241,7 +238,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
 }
 
@@ -651,7 +648,7 @@ nav {
     justify-content: center;
     width: 100%;
 
-    .hero-text-content {
+    .text-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -822,6 +819,17 @@ nav {
         border-radius: 16px;
         z-index: 0;
     }
+    
+    .coffee-image-overlay1 {
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+    .coffee-image-overlay2 {
+        opacity: 0.4;
+        z-index: 1;
+    }
+
 }
 
 .slow-bar-section {
@@ -839,6 +847,10 @@ nav {
     grid-gap: 16px;
     margin-top: 24px;
 
+    .icon-text-card {
+        grid-column: auto;
+    }
+
     .icon-card-image {
         background-color: #EDEDD7;
     }
@@ -850,5 +862,74 @@ nav {
 }
 
 .our-coffee-cards-section {
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px
+    }
+}
+
+.single-card-container {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    padding: 40px;
+    gap: 40px;
+    background-color: #F8F6F2;
+    border-radius: 16px;
+
+    .coffee-card-image-content {
+        width: 50%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+}
+
+
+.coffee-card-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
     
+    .text-content {
+        margin: 16px 0px;
+        max-width: none;
+    }
+
+}
+
+.large-cta-bordered {
+    display: flex;
+    position: relative;
+    padding: 40px 16px;
+    overflow: hidden;
+    gap: 16px;
+    margin: 0px 16px;
+    border-radius: 16px;
+    z-index: 0;
+
+    .large-cta-image-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    h2 {
+        margin-top: 16px;
+    }
+}
+
+.event-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
 }
