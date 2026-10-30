@@ -233,7 +233,7 @@ p {
     overflow: hidden;
 
     .text-content {
-        margin: 16px 0px;
+        margin: 12px 0px;
         max-width: 750px;
 
         p {
@@ -572,6 +572,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: white;
+    /* background-image: linear-gradient(to right, #477A72, #928A42); */
     margin-top: 16px;
     padding: 40px 16px;
     border-radius: 16px;
