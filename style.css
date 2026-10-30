@@ -347,6 +347,8 @@ p {
 }
 
 .who-we-are-section {
+    display: flex;
+    flex-direction: column;
     padding: 80px 0px;
     background-color: #E1EAE8;
 }
@@ -354,6 +356,7 @@ p {
 .cards-container {
     display: flex;
     width: 100%;
+    margin-top: 24px;
     gap: 16px;
 }
 
@@ -393,15 +396,10 @@ p {
 
     .text-content {
         margin: 12px 0px;
-
-        h2 {
-            font-family:"LeagueSpartan", serif;
-        }
     }
 
     .button-green {
         margin-top: 4px;
-        margin-bottom: 24px
     }
 }
 
@@ -417,11 +415,17 @@ p {
     color: #3D5E5E;
 }
 
+.font-special-serif-header {
+    font-family: "LeagueSpartan";
+    font-weight: 600;
+}
+
 .events-carousel {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
     grid-gap: 16px;
+    margin-top: 24px
 }
 
 .event-card {
@@ -637,10 +641,10 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 12px 0px;
-    border-bottom: 1px solid #745F50;
+    border-bottom: 1px solid #D4CEB9;
 
     p {
-        color: #361B08;
+        color: #745F50;
     }
 }
 
@@ -772,6 +776,7 @@ nav {
     margin-top: 24px;
 
     p {
+        color: #745F50;
         margin-top: 8px;
     }
 }
@@ -791,6 +796,10 @@ nav {
 
     h2 {
         font-family: "LeagueSpartan", serif;
+    }
+
+    .text-content {
+        margin-top: 12px;
     }
 }
 
@@ -962,6 +971,10 @@ nav {
         text-align: left;
     }
 
+    h2 {
+        font-family: "LeagueSpartan", serif;
+    }
+
 }
 
 .our-schedule-section {
@@ -1007,11 +1020,17 @@ nav {
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    h4 {
+        color: #928A42;
+    }
 }
 
 .event-title {
     margin-top: 24px;
     margin-bottom: 12px;
+    color: #361B08;
+    font-weight: 600;
 }
 
 form {
