@@ -286,7 +286,7 @@ p {
     text-align: center;
 
    p {
-    margin-top: 4px;
+    margin-top: 8px;
    }
 }
 
@@ -298,7 +298,7 @@ p {
     text-align: center;
 
    p {
-    margin-top: 4px;
+    margin-top: 12px;
    }
 
 }
@@ -500,6 +500,22 @@ p {
     }
 }
 
+.cta-container-simplified {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    background-color: #F8F6F2;
+    border-radius: 16px;
+    filter: drop-shadow(rgba(0, 0, 0, .10) 0px 4px 20px);
+
+    h2 {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
 .cta-icon-image {
     padding: 12px;
     background-color: #EDEDD7;
@@ -690,10 +706,6 @@ nav {
         h1 {
             font-size: 60px;
         }
-
-        p {
-            margin-top: 8px;
-        }
     }
 }
 
@@ -705,6 +717,7 @@ nav {
     width: 100%;
     height: 100%;
     background-color: #F8F6F2;
+    padding: 16px;
     border-radius: 16px;
 }
 
@@ -837,7 +850,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    h2 {
+    h1 {
         color: white;
     }
 
