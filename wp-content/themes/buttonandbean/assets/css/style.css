@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* cursor: url("assets/img/bean1.png") 16 16, pointer; */
+    /* cursor: url("<?= get_template_directory_uri();?>/assets/img/bean1.png") 16 16, pointer; */
     
     a {
         color: inherit;
@@ -12,7 +12,7 @@
     }
 
     /* a:hover, a> p:hover {
-       cursor: url("assets/img/bean4.png") 16 16, pointer; 
+       cursor: url("<?= get_template_directory_uri();?>/assets/img/bean4.png") 16 16, pointer; 
     }*/
 } 
 
@@ -283,6 +283,10 @@ p {
     z-index: -1;
 }
 
+.hero-text-content {
+    padding: 0px 16px;
+}
+
 .text-content {
     display: flex;
     flex-direction: column;
@@ -320,6 +324,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 16px;
     z-index: 0;
 
     img {
@@ -380,7 +385,7 @@ p {
 
 .content-card-image {     
         width: 100%;
-        height: 540px;
+        height: 432px;
         object-fit: cover;
         border-radius: 16px;
     }
@@ -431,6 +436,8 @@ p {
     width: 100%;
     grid-gap: 16px;
     margin-top: 24px;
+
+    
 }
 
 .event-card {
@@ -574,10 +581,10 @@ p {
 }
 
 .primary-footer {
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-color: white;
-    /* background-image: linear-gradient(to right, #477A72, #928A42); */
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.8));
     margin-top: 16px;
     padding: 40px 16px;
     border-radius: 16px;
@@ -678,6 +685,7 @@ nav {
 
 .footer-text {
     width: 100%;
+    margin-top: -70px;
 }
 
 /* Hero and Headers */
@@ -712,10 +720,6 @@ nav {
         text-align: center;
         width: 100%;
         margin-top: 12px;
-
-        h1 {
-            font-size: 60px;
-        }
     }
 }
 
@@ -742,7 +746,7 @@ nav {
     height: 100%;
     z-index: 0;
     overflow: hidden;
-    padding: 80px 16px;
+    padding: 80px 0px;
 }
 
 .values-cards-container {
@@ -1083,11 +1087,19 @@ form {
     }
 }
 
+/* fix in own time cuz bad */
+
 .contact-form-hero {
     width: 100%;
-    border-radius: 0px !important;
 
     .coffee-hero-image {
-        border-radius: 0px !important;
+
+        .image-background-header-text {
+            padding: 80px 0px;
+        }
+
+        img, .coffee-image-overlay1, .coffee-image-overlay2 {
+            border-radius: 0px !important;
+        }
     }
 }

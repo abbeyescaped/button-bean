@@ -1,20 +1,144 @@
 @media (max-width: 1440px) {
 
+    .text-header-content-container {
+        padding: 40px;
+    }
+
+    .text-header-half {
+
+        h1 {
+            font-size: 54px;
+        }
+    }
+
 }
 
 @media (max-width: 1280px) {
+
+    .content-card {
+        padding: 24px;
+    }
+
+    .content-card-image {
+        height: 360px;
+    }
+
+    .text-ticker {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
 }
 
 @media (max-width: 1024px) {
 
+    .image-text-header {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .text-header-content-container {
+        padding: 80px 16px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .content-card-image {
+        height: 432px;
+    }
+
+    .our-story-card {
+        object-position: 50% 10%;
+    }
+
+    .image-header-half {
+        height: 600px;
+    }
+
+    .values-cards-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .fifth-card {
+        grid-column-start: 1;
+    }
 }
 
 /* Mobile */
 
 @media (max-width: 768px) {
 
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .cards-container {
+
+        .button-green {
+            width: 100%;
+        }
+
+    }
+
+    .quote-section {
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .content-card {
+        padding: 24px 24px;
+        border-radius: 16px;
+    }
+
+    .content-card-image {
+        height: unset;
+        aspect-ratio: 5/4;
+    }
+
     .events-carousel {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+    .image-header-half {
+        aspect-ratio: 1;
+    }
+
+    .text-header-half {
+
+        h1 {
+            font-size: 44px;
+        }
+    }
+
+    .text-header-content-container {
+        padding: 40px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* .button-green {
+        width: 100%;
+    }
+
+    .button-blue {
+        width: 100%;
+    }
+
+    .button-set {
+        flex-direction: column;
+        width: 100%;
+    } */
 }
