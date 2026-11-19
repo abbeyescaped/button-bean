@@ -28,6 +28,10 @@
         justify-content: center;
     }
 
+    .contact-form {
+        padding: 24px;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -64,9 +68,52 @@
     .fifth-card {
         grid-column-start: 1;
     }
+
+    .team-card-container {
+        flex-direction: column;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .team-image {
+        height: 75vh;
+    }
+
+    .slow-bar-cards-container {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .single-card-container {
+        flex-direction: column;
+        height: fit-content;
+        padding: 24px;
+        gap: 24px
+    }
+
+    .coffee-card-image-content {
+        width: 100%;
+        aspect-ratio: 3/2;
+    }
+
+    .coffee-card-text-content {
+        width: 100%;
+    }
+
+    .monthly-events {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 /* Mobile */
+
+@media (min-width: 768px) {
+    
+    .footer-mobile {
+        display: none;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -80,6 +127,10 @@
 
     h3 {
         font-size: 24px;
+    }
+
+    .footer {
+        display: none;
     }
 
     .cards-container {
@@ -125,6 +176,38 @@
     .text-header-content-container {
         padding: 40px 16px;
     }
+
+    .single-card-container {
+        padding: 24px;
+        gap: 24px;
+
+        .button-green {
+            width: 100%;
+        }
+
+    }
+
+    .coffee-card-text-content {
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .cafecita-card {
+        flex-direction: column-reverse;
+    }
+
+    .large-cta {
+        
+        .font-special-serif-header {
+            line-height: 1;
+        }
+    }
+
+    .event-title {
+        margin-top: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -141,4 +224,23 @@
         flex-direction: column;
         width: 100%;
     } */
+
+    .team-image {
+        height: auto;
+    }
+
+    .coffee-card-image-content {
+        aspect-ratio: 1;
+    }
+
+    .primary-navigation-right {
+
+        .radial-button {
+            display: none;
+        }
+    }
+
+    .nav-bar {
+        margin-right: 0px;
+    }
 }

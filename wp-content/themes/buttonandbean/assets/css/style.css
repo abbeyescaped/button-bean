@@ -4,16 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* cursor: url("<?= get_template_directory_uri();?>/assets/img/bean1.png") 16 16, pointer; */
+    /* cursor: url("<?= get_template_directory_uri();?> /assets/img/custom-cursor.svg") 16 16, default; */
     
     a {
         color: inherit;
         text-decoration: none;
     }
 
-    /* a:hover, a> p:hover {
-       cursor: url("<?= get_template_directory_uri();?>/assets/img/bean4.png") 16 16, pointer; 
-    }*/
+    a:hover, a> p:hover {
+       /* cursor: url("<?= get_template_directory_uri();?> /assets/img/custom-cursor.svg") 16 16, pointer;  */
+    }
 } 
 
 body {
@@ -84,6 +84,7 @@ p {
     border-radius: 16px;
     background-color: white;
     gap: 4px;
+    transition-duration: 300ms;
 
     img {
         width: 20px;
@@ -93,6 +94,19 @@ p {
     p {
         color: #928A42;
     }
+}
+
+.button-green:hover {
+    background-color: #928A42;
+
+    path {
+        stroke: white;
+    }
+
+    p {
+        color: white;
+    }
+
 }
 
 .button-blue {
@@ -106,6 +120,7 @@ p {
     border-radius: 16px;
     background-color: white;
     gap: 4px;
+    transition-duration: 300ms;
 
     img {
         width: 20px;
@@ -115,6 +130,19 @@ p {
     p {
         color: #3D5E5E;
     }
+}
+
+.button-blue:hover {
+    background-color: #3D5E5E;
+
+    path {
+        stroke: white;
+    }
+
+    p {
+        color: white;
+    }
+
 }
 
 .radial-button {
@@ -127,11 +155,18 @@ p {
     padding: 10px 20px;
     border-radius: 16px;
     background-image: radial-gradient(circle, #DDDBB2, #BED1CE);
+    transition-duration: 300ms;
 
     p {
         color: #361B08;
         font-weight: 600;
     }
+}
+
+.radial-button:hover {
+    background-image: unset;
+    background-color: #BED1CE;
+    filter: drop-shadow(rgba(146, 138, 66, 1) 0px 0px 8px);
 }
 
 .chip {
@@ -181,7 +216,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: #4D250A;
-    opacity: 0.6;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -192,7 +227,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.2;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -219,11 +254,9 @@ p {
     display: flex;
     font-family: "LeagueSpartan", serif;
     color: #553C2C;
-    font-weight: 18px;
-    
-    li {
-        margin-right: 12px;
-    }
+    font-size: 18px;
+    gap: 12px;
+    margin-right: 12px;
 }
 
 .hero-content {
@@ -447,9 +480,8 @@ p {
     z-index: 0;
 
     img {
-        /* width: ; */
-        height: 380px;
-        /* max-width: ; */
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -460,20 +492,35 @@ p {
 
 .green-event-card {
     background-color: #EDEDD7;
+
+    .event-card-overlay {
+        background-color: #3D5E5E;
+    }
 }
 
 .blue-event-card {
     background-color: #E1EAE8;
+
+    .event-card-overlay {
+        background-color: #928A42;
+    }
 }
 
-.green-overlay {
+.event-card-overlay {
+    position: absolute;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #928A42;
     z-index: 1;
+    opacity: .6;
+}
+
+.event-image-container {
+    position: relative;
+    width: 100%;
+    height: 380px;
 }
 
 .large-cta {
@@ -497,26 +544,7 @@ p {
 }
 
 .cta-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 24px 16px;
-    background-color: #F8F6F2;
-    border-radius: 16px;
-    filter: drop-shadow(rgba(0, 0, 0, .10) 0px 4px 20px);
-
-    .text-content {
-        margin-top: 24px;
-        margin-bottom: 16px;
-
-       p {
-            color: #745F50;
-        }
-    }
-}
-
-.cta-container-simplified {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -528,7 +556,16 @@ p {
 
     h2 {
         text-align: center;
-        margin-bottom: 16px;
+    }
+
+    .text-content {
+        p {
+            color: #745F50;
+        }
+    }
+
+    .button-blue {
+        margin-top: 16px;
     }
 }
 
@@ -536,7 +573,10 @@ p {
     padding: 12px;
     background-color: #EDEDD7;
     border-radius: 16px;;
+    margin-bottom: 24px;
 }
+
+/* Footer Styles Desktop */
 
 .footer {
     margin-top: 80px;
@@ -686,6 +726,83 @@ nav {
 .footer-text {
     width: 100%;
     margin-top: -70px;
+}
+
+/* Footer Styles Mobile */
+
+.footer-mobile {
+    margin-top: 40px;
+}
+
+.footer-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.instagram-carousel-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0px;
+
+    .instagram-cards {
+        gap: 8px;
+
+        img {
+            aspect-ratio: 1;
+            object-fit: cover;
+            width: 100%;
+            border-radius: 16px;
+        }
+    }
+}
+
+.primary-footer-mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.8));
+    margin-top: 16px;
+    padding: 40px 16px;
+    border-radius: 16px;
+}
+
+.footer-top-content-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-mobile-logo {
+    object-fit: contain;
+    width: 103px;
+    height: 113px;
+    margin-right: 93px;
+    object-position: top;
+}
+
+.footer-ctas-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.content-links-container-top-mobile {
+
+}
+
+.footer-bottom-content-mobile {
+
+    .footer-nav-links {
+        margin: 40px 0px;
+    }
+}
+
+.footer-ctas-mobile {
+
 }
 
 /* Hero and Headers */
@@ -897,13 +1014,11 @@ nav {
     }
     
     .coffee-image-overlay1 {
-        opacity: 0.4;
         z-index: 1;
         border-radius: 16px;
     }
 
     .coffee-image-overlay2 {
-        opacity: 0.4;
         z-index: 1;
         border-radius: 16px;
     }
@@ -958,15 +1073,14 @@ nav {
     gap: 40px;
     background-color: #F8F6F2;
     border-radius: 16px;
+}
 
-    .coffee-card-image-content {
+.coffee-card-image-content {
         width: 50%;
         aspect-ratio: 1;
         object-fit: cover;
         border-radius: 16px;
     }
-}
-
 
 .coffee-card-text-content {
     display: flex;
@@ -1076,6 +1190,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     background-color: white;
     border-radius: 32px;
     padding: 40px;
@@ -1084,22 +1199,137 @@ form {
     h3 {
         color: #553C2C;
         margin-bottom: 4px;
+        text-align: center;
     }
 }
 
-/* fix in own time cuz bad */
-
 .contact-form-hero {
     width: 100%;
+}
 
-    .coffee-hero-image {
+.image-background-header {
+    width: 100%;
+    height: 80vh;
+    background-color: #928A42;
+    padding: 16px;
+
+    .text-content {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+.coffee-hero-image {
 
         .image-background-header-text {
             padding: 80px 0px;
         }
-
-        img, .coffee-image-overlay1, .coffee-image-overlay2 {
-            border-radius: 0px !important;
-        }
     }
+
+.contact-form-hero-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img.absolute {
+        position: absolute;
+        top: left;
+        top: right;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        z-index: 0;
+    }
+
+    .coffee-image-overlay1 {
+        z-index: 1;
+    }
+
+    .coffee-image-overlay2 {
+        z-index: 1;
+    }
+}
+
+.contact-hero-text {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+
+    h1 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.decorative-image {
+    position: absolute;
+}
+
+.button-1 {
+    top: 0;
+    left: 5%;
+}
+
+.button-2 {
+    top: 40%;
+    left: 16%;
+}
+
+.button-3 {
+    bottom: 0;
+    left: 0;
+}
+
+.button-4 {
+    top: 0;
+    right: 0;
+}
+
+.button-5 {
+    top: 32%;
+    right: 10%;
+}
+
+.button-6 {
+    bottom: 0%;
+    right: 1%;
+}
+
+.bean-1 {
+    top: 17%;
+    left: 5%;
+}
+
+.bean-2 {
+    top: 47%;
+    left: 0;
+}
+
+.bean-3 {
+    bottom: 0;
+    left: 4.5%;
+}
+
+.bean-4 {
+    top: 4%;
+    right: 7.8%;
+}
+
+.bean-5 {
+    top: 40%;
+    right: 1%;
+}
+
+.bean-6 {
+    bottom: 0;
+    right: 4.2%;
 }

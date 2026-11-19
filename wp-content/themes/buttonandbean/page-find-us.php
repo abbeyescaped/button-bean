@@ -55,11 +55,25 @@
 
     <div class="large-cta"> 
     <img class= "large-cta-image-bg" src="<?= get_template_directory_uri();?>/assets/img/blue-blue-1px.png" alt="Button and Bean logo, an illustrated face of a women with coffee beans on her cheeks">
-        <div class="cta-container-simplified container">
-            <h2><span class="font-special-serif-header">What to book us for</span><br>your next market or event?</h2>
+        <div class="cta-container container">
+            <img class="decorative-image button-1" src="<?= get_template_directory_uri();?>/assets/img/button1.svg" alt="button">
+            <img class="decorative-image button-3" src="<?= get_template_directory_uri();?>/assets/img/button3.svg" alt="button">
+            <img class="decorative-image button-4" src="<?= get_template_directory_uri();?>/assets/img/button4.svg" alt="button">
+            <img class="decorative-image button-5" src="<?= get_template_directory_uri();?>/assets/img/button5.svg" alt="button">
+            <img class="decorative-image button-6" src="<?= get_template_directory_uri();?>/assets/img/button6.svg" alt="button">
+            <img class="decorative-image bean-1" src="<?= get_template_directory_uri();?>/assets/img/bean1.svg" alt="bean">
+            <img class="decorative-image bean-2" src="<?= get_template_directory_uri();?>/assets/img/bean2.svg" alt="bean">
+            <img class="decorative-image bean-3" src="<?= get_template_directory_uri();?>/assets/img/bean3.svg" alt="bean">
+            <img class="decorative-image bean-4" src="<?= get_template_directory_uri();?>/assets/img/bean4.svg" alt="bean">
+            <img class="decorative-image bean-5" src="<?= get_template_directory_uri();?>/assets/img/bean5.svg" alt="bean">
+            <img class="decorative-image bean-6" src="<?= get_template_directory_uri();?>/assets/img/bean6.svg" alt="bean">
+            <img class="decorative-image button-2" src="<?= get_template_directory_uri();?>/assets/img/button2.svg" alt="button">
+            <h2><span class="font-special-serif-header">Want to book us for your </span><br>next market or event?</h2>
             <div class="button-blue">
                 <p>Connect with us!</p>
-                <img src="<?= get_template_directory_uri();?>/assets/img/top-right-arrow-blue.svg" alt="Blue arrow pointing to the north east of the page, which turns towards the left on hover">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.7142 5.28583L5.28589 14.7142M15.0001 11.6667V5H8.33339" stroke="#3D5E5E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
     </div>

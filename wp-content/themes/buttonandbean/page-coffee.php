@@ -5,14 +5,14 @@
                 <div class="coffee-image-overlay1"></div>
                 <div class="coffee-image-overlay2"></div>
                 <img class="absolute" src="<?= get_template_directory_uri();?>/assets/img/coffee-hero-coffee-closeup.JPEG" alt="Close up image coffee cart counter, where someone's hand is measuring coffee grinds while preparing a pour over coffee">
-                <div class="image-background-header-text">
-                <div class="text-content">
-                    <h1>Our Coffee</h1>
-                    <p>A small, diverse, and inclusive coffee company centred around the craft and experience of coffee. At Button & Bean, we embrace the slow bar philosophy: taking a moment to appreciate the process of making and enjoying coffee.</p>
-                </div>
-                <div class="button-green">
-                    <p>Our Menu</p>
-                </div>
+                    <div class="image-background-header-text hero-text-content">
+                    <div class="text-content">
+                        <h1>Our Coffee</h1>
+                        <p>A small, diverse, and inclusive coffee company centred around the craft and experience of coffee. At Button & Bean, we embrace the slow bar philosophy: taking a moment to appreciate the process of making and enjoying coffee.</p>
+                    </div>
+                    <a class="button-green" href="<?= get_template_directory_uri();?>/assets/pdfs/bb-menu.pdf" target="_blank">
+                        <p>Our Menu</p>
+                    </a>
             </div>
             </div>
     </div>
@@ -97,11 +97,14 @@
                     </div>
                     <div class="button-green">
                         <p>Our Menu</p>
-                        <img src="<?= get_template_directory_uri();?>/assets/img/top-right-arrow-green.svg" alt="Green arrow pointing to the north east of the page, which turns towards the left on hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7142 5.28583L5.28589 14.7142M15.0001 11.6667V5H8.33339" stroke="#928A42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                     </div>
                 </div>
             </div>
-            <div class="single-card-container">
+            <div class="single-card-container cafecita-card">
                 <div class="coffee-card-text-content">
                     <div class="chip">
                         <img src="<?= get_template_directory_uri();?>/assets/img/sparkles-green.svg" alt="Green sparkles icon">
@@ -113,7 +116,10 @@
                     </div>
                     <a class="button-green" href="https://cafecitacoffee.com/" target="_blank">
                         <p>Check out Cafecita Beans</p>
-                        <img src="<?= get_template_directory_uri();?>/assets/img/top-right-arrow-green.svg" alt="Green arrow pointing to the north east of the page, which turns towards the left on hover">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.7142 5.28583L5.28589 14.7142M15.0001 11.6667V5H8.33339" stroke="#928A42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                     </a>
                 </div>
                 <img class="coffee-card-image-content" src="<?= get_template_directory_uri();?>/assets/img/cafecita-coffee-beans.png" alt="A row of Cafecita coffee bean bags sits on coffee shop counter">

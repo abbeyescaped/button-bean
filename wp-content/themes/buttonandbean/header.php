@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/assets/css/style.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/assets/css/fonts.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri();?>/assets/css/responsive.css">
+
+    <style>
+        a:hover, a> p:hover {
+            cursor: url("<?= get_template_directory_uri();?> /assets/img/custom-cursor.svg") 0 0, pointer; 
+        }
+    </style>
 </head>
 
 <body>
