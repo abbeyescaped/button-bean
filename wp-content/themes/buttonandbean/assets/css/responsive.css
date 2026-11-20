@@ -32,6 +32,17 @@
         padding: 24px;
     }
 
+    .button-2, .button-5 {
+        display: none;
+    }
+
+    .instagram-carousel {
+        gap: 12px;
+
+        .instagram-card-icon:last-of-type {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -104,6 +115,16 @@
     .monthly-events {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+    .button-3 {
+        bottom: -8%;
+        left: -2%;
+    }
+
+.button-4 {
+    top: -2%;
+    right: -2%;
+}
 }
 
 /* Mobile */
@@ -113,6 +134,7 @@
     .footer-mobile {
         display: none;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -138,7 +160,6 @@
         .button-green {
             width: 100%;
         }
-
     }
 
     .quote-section {
@@ -207,6 +228,10 @@
 
     .event-title {
         margin-top: 12px;
+    }
+
+    .bean-2, .bean-5 {
+        display: none;
     }
 }
 

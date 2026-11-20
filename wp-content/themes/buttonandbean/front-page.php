@@ -3,7 +3,7 @@
     <div class="hero-content">
         <div class="hero-overlay1"></div>
         <div class="hero-overlay2"></div>
-        <video src="<?= get_template_directory_uri();?>/assets/videos/hero-video" poster="<?= get_template_directory_uri();?>/assets/img/poster.JPEG" muted plays inline></video>
+        <video src="<?= get_template_directory_uri();?>/assets/videos/hero-video.mp4" poster="<?= get_template_directory_uri();?>/assets/img/poster.JPEG" muted plays inline autoplay loop></video>
         <div class="hero-text-content center-content">
             <div class="chip-reverse">
             <img src="<?= get_template_directory_uri();?>/assets/img/sparkles-icon-white.svg" alt="White sparkles icon"/>

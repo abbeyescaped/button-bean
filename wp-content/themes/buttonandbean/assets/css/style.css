@@ -553,6 +553,7 @@ p {
     background-color: #F8F6F2;
     border-radius: 16px;
     filter: drop-shadow(rgba(0, 0, 0, .10) 0px 4px 20px);
+    overflow: hidden;
 
     h2 {
         text-align: center;
@@ -609,6 +610,7 @@ p {
 
     img {
         width: 100%;
+        height: 100%;
         aspect-ratio: 1;
         object-fit: cover;
         border-radius: 16px;
@@ -616,8 +618,8 @@ p {
 }
 
 .instagram-card-icon {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 .primary-footer {
@@ -706,14 +708,7 @@ nav {
     justify-content: space-between;
     padding: 12px 0px;
 
-    img {
-
-        width: 16px;
-        height: 16px;
-        margin-right: 4px;
-    }
-
-    p{
+    p {
         color: #745F50;
         font-size: 14px;
     }
@@ -721,11 +716,18 @@ nav {
 
 .copyright {
     display: flex;
+    align-items: center;
+
+    img {
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+    }
 }
 
 .footer-text {
     width: 100%;
-    margin-top: -70px;
+    margin-top: -6%;
 }
 
 /* Footer Styles Mobile */
@@ -783,6 +785,7 @@ nav {
     height: 113px;
     margin-right: 93px;
     object-position: top;
+    margin-bottom: 16px;
 }
 
 .footer-ctas-mobile {
@@ -791,18 +794,31 @@ nav {
 }
 
 .content-links-container-top-mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+    gap: 12px;
 
+    p {
+        color: #745F50;
+    }
 }
 
-.footer-bottom-content-mobile {
+.content-links-container-bottom-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 
-    .footer-nav-links {
-        margin: 40px 0px;
+    p {
+        color: #745F50;
+        font-size: 14px;
     }
 }
 
 .footer-ctas-mobile {
-
+    display: flex;
+    margin-bottom: 40px;
+    gap: 16px;
 }
 
 /* Hero and Headers */
@@ -1281,7 +1297,7 @@ form {
 
 .button-2 {
     top: 40%;
-    left: 16%;
+    left: 14%;
 }
 
 .button-3 {
